@@ -45,6 +45,3 @@ To update/upload not synced files
 
 `gsutil iam ch allUsers:objectViewer gs://surfsc-wpoffload-media/files`
 
-### Create secret with the GCP CDN service account <a href="#buckets" id="buckets"></a>
-
-kubectl create secret generic wp-offload-media-credentials --from-file ./gpc-cdn-key.json`e`
