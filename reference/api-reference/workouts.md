@@ -2,7 +2,7 @@
 
 ## Getting a workout
 
-{% swagger baseUrl="https://api.myapi.com/v1" method="get" path="workout" summary="Get workout by ID." %}
+{% swagger baseUrl="https://surfstrengthcoach.com/wp-json/surfsc/v1/workout/" method="get" path="workoutID" summary="Get workout by ID." %}
 {% swagger-description %}
 Creates a new pet.
 {% endswagger-description %}

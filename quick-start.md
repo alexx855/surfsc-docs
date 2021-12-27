@@ -1,23 +1,5 @@
 # Quick Start
 
-## SHH keys
-
-SSH keys should be added on the file on `base/ssh-configmap.yaml`&#x20;
-
-Please do a new Release as described [here ](quick-start.md#releases)after changing something to have effect.\
-\
-You can get the IP for the different environments with `kubectl get svc` or from the [GCP console](https://console.cloud.google.com/kubernetes/discovery?project=surf-strength-coach-242708)
-
-Example ssh:
-
-`ssh www-data@34.145.70.216 -p 2221`\
-``\
-``Example pulling wp-content using rsync
-
-```
-rsync -arvz -e 'ssh -p 2221' --progress www-data@104.196.248.135:/var/www/html/wp-content ~/dev/surfsc/wordpress/wp-content
-```
-
 ## Releases
 
 **Whenever we** do [a new release on Github](https://github.com/marianoj/surfsc/releases) (pre-release for staging) it triggers a [Github Action](https://github.com/marianoj/surfsc/actions) that  builds an image from the repository, uploads it to GCP Image directory and deployed to GCP Kubernetes Engine where the Pod is remplace with a new one
@@ -26,7 +8,7 @@ rsync -arvz -e 'ssh -p 2221' --progress www-data@104.196.248.135:/var/www/html/w
 
 Plugins uploads are disabled in production for security and stability reasons.
 
-To perform an update, you should first update the plugins on staging or your local  environment and you can push the plugins using [Wordmove](quick-start.md#wordmove), rsync with [SSH](quick-start.md#shh-keys) or with a new [Release](quick-start.md#releases)
+To perform an update, you should first update the plugins on staging or your local  environment and you can push the plugins using [Wordmove](quick-start.md#wordmove), SSH or with a new [Release](quick-start.md#releases)
 
 ## Wordpress updates
 

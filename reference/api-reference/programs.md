@@ -2,7 +2,7 @@
 
 ## Getting the programs
 
-{% swagger baseUrl="https://api.myapi.com/v1" method="get" path="/programs" summary="Get programs." %}
+{% swagger baseUrl="https://surfstrengthcoach.com/wp-json/surfsc/v3" method="get" path="/programs" summary="Get programs." %}
 {% swagger-description %}
 Creates a new pet.
 {% endswagger-description %}

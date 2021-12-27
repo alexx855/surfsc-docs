@@ -1,8 +1,8 @@
 # Welcome!
 
-## Welcome to MyAPI
+## Welcome to SurfSC
 
-Welcome to MyAPI! Here you'll find all the documentation you need to get up and running with the MyAPI API.
+Welcome to SurfSC! Here you'll find all the documentation you need to get up and running with the SurfSC API.
 
 ## Want to jump right in?
 
